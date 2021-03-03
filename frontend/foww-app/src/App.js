@@ -1,14 +1,12 @@
 import './App.css';
 import Header from './Components/Header'
 import ModeSelect from './Components/ModeSelect'
+import Builder from './Components/Builder'
 import{
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link
+  Route
 } from 'react-router-dom'
-
-//herpaderpa
 
 function App() {
   return (
@@ -22,11 +20,11 @@ function App() {
             </Route>
 
             <Route path="/freebuild">
-              <h1>Free Build</h1>
+              <Builder/>
             </Route>
 
             <Route path="/battlemode">
-              <h1>Battle Mode</h1>
+              <Builder/>
             </Route>
           </Switch>
 
